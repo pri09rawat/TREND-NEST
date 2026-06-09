@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrendNest - Gadgets & Fashion</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#ffffff;
+color:#111;
+}
+
+header{
+background:linear-gradient(135deg,#6C3BFF,#111);
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#D4AF37;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:50px 8%;
+background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-content span{
+color:#D4AF37;
+}
+
+.hero-content p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#D4AF37;
+color:#111;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin:70px 0 40px;
+color:#6C3BFF;
+}
+
+.categories{
+padding:0 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h3{
+margin-bottom:10px;
+}
+
+.card-content p{
+color:#555;
+}
+
+.trending{
+padding:0 8% 80px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.trend-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.trend-card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.trend-card .info{
+padding:20px;
+}
+
+.trend-card button{
+background:#6C3BFF;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:25px;
+cursor:pointer;
+margin-top:12px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+footer h3{
+color:#D4AF37;
+margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">TrendNest</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Gadgets</a>
+<a href="#">Fashion</a>
+<a href="#">Blog</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Welcome to <span>TrendNest</span></h1>
+<p>Discover trending gadgets, aesthetic outfits, viral finds and Pinterest-worthy inspirations all in one place.</p>
+
+<a href="#" class="btn">Explore Trends</a>
+</div>
+</section>
+
+<h2 class="section-title">Browse Categories</h2>
+
+<section class="categories">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<div class="card-content">
+<h3>Trending Gadgets</h3>
+<p>Latest tech products, smart accessories and viral gadgets.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+<div class="card-content">
+<h3>Fashion Finds</h3>
+<p>Outfits, style inspiration and aesthetic fashion ideas.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+<div class="card-content">
+<h3>Pinterest Trends</h3>
+<p>Discover what's going viral across Pinterest every day.</p>
+</div>
+</div>
+
+</section>
+
+<h2 class="section-title">Trending Picks</h2>
+
+<section class="trending">
+
+<div class="trend-card">
+<img src="https://images.unsplash.com/photo-1583394838336-acd977736f90">
+<div class="info">
+<h3>Smart Watch Collection</h3>
+<p>Premium wearable gadgets loved by tech enthusiasts.</p>
+<button>View Details</button>
+</div>
+</div>
+
+<div class="trend-card">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b">
+<div class="info">
+<h3>Aesthetic Outfit Ideas</h3>
+<p>Perfect looks for college, travel and everyday fashion.</p>
+<button>View Details</button>
+</div>
+</div>
+
+<div class="trend-card">
+<img src="https://images.unsplash.com/photo-1498049794561-7780e7231661">
+<div class="info">
+<h3>Tech Essentials</h3>
+<p>Must-have gadgets for students and professionals.</p>
+<button>View Details</button>
+</div>
+</div>
+
+</section>
+
+<footer>
+<h3>TrendNest</h3>
+<p>Where Style Meets Innovation</p>
+<p>© 2026 TrendNest. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
